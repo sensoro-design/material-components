@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@lins-material/provider": ["packages/provider/src/index.ts"],
+      "@lins-material/provider/es/*": ["packages/provider/src/*"],
+      "@lins-material/provider/lib/*": ["packages/provider/src/*"],
+      "@lins-material/components": ["packages/components/src/index.ts"],
+      "@lins-material/components/es/*": ["packages/components/src/*"],
+      "@lins-material/components/lib/*": ["packages/components/src/*"],
+    },
+    "strictNullChecks": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "jsxFactory": "React.createElement",
+    "jsxFragmentFactory": "React.Fragment",
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "target": "es6",
+    "lib": ["dom", "es2017"],
+    "skipLibCheck": true,
+    "stripInternal": true
+  },
+  "exclude": ["node_modules", "lib", "es"]
+}
