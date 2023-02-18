@@ -56,8 +56,10 @@ importers:
   packages/provider:
     specifiers:
       '@ant-design/cssinjs': ^1.5.6
+      '@ctrl/tinycolor': ^3.6.0
     dependencies:
       '@ant-design/cssinjs': registry.npmmirror.com/@ant-design/cssinjs/1.5.6
+      '@ctrl/tinycolor': registry.npmmirror.com/@ctrl/tinycolor/3.6.0
 
 packages:
 
@@ -82,7 +84,7 @@ packages:
     name: '@ant-design/colors'
     version: 7.0.0
     dependencies:
-      '@ctrl/tinycolor': registry.npmmirror.com/@ctrl/tinycolor/3.5.0
+      '@ctrl/tinycolor': registry.npmmirror.com/@ctrl/tinycolor/3.6.0
     dev: true
 
   registry.npmmirror.com/@ant-design/cssinjs/1.5.6:
@@ -1120,12 +1122,11 @@ packages:
       postcss-selector-parser: registry.npmmirror.com/postcss-selector-parser/6.0.11
     dev: true
 
-  registry.npmmirror.com/@ctrl/tinycolor/3.5.0:
-    resolution: {integrity: sha512-tlJpwF40DEQcfR/QF+wNMVyGMaO9FQp6Z1Wahj4Gk3CJQYHwA2xVG7iKDFdW6zuxZY9XWOpGcfNCTsX4McOsOg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@ctrl/tinycolor/-/tinycolor-3.5.0.tgz}
+  registry.npmmirror.com/@ctrl/tinycolor/3.6.0:
+    resolution: {integrity: sha512-/Z3l6pXthq0JvMYdUFyX9j0MaCltlIn6mfh9jLyQwg5aPKxkyNa0PTHtU1AlFXLNk55ZuAeJRcpvq+tmLfKmaQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@ctrl/tinycolor/-/tinycolor-3.6.0.tgz}
     name: '@ctrl/tinycolor'
-    version: 3.5.0
+    version: 3.6.0
     engines: {node: '>=10'}
-    dev: true
 
   registry.npmmirror.com/@emotion/hash/0.8.0:
     resolution: {integrity: sha512-kBJtf7PH6aWwZ6fka3zQ0p6SBYzx4fl1LoZXE2RrnYST9Xljm7WfKJrU4g/Xr3Beg72MLrp1AWNUmuYJTL7Cow==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@emotion/hash/-/hash-0.8.0.tgz}
@@ -4043,7 +4044,7 @@ packages:
       '@ant-design/icons': registry.npmmirror.com/@ant-design/icons/5.0.1_biqbaboplfbrettd7655fr4n2y
       '@ant-design/react-slick': registry.npmmirror.com/@ant-design/react-slick/1.0.0_react@18.2.0
       '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.20.13
-      '@ctrl/tinycolor': registry.npmmirror.com/@ctrl/tinycolor/3.5.0
+      '@ctrl/tinycolor': registry.npmmirror.com/@ctrl/tinycolor/3.6.0
       '@rc-component/mutate-observer': registry.npmmirror.com/@rc-component/mutate-observer/1.0.0_biqbaboplfbrettd7655fr4n2y
       '@rc-component/tour': registry.npmmirror.com/@rc-component/tour/1.6.0_biqbaboplfbrettd7655fr4n2y
       classnames: registry.npmmirror.com/classnames/2.3.2
