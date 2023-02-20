@@ -5,7 +5,7 @@ export default defineConfig({
   themeConfig: {
     name: 'Material',
     socialLinks: {
-      gitlab: 'https://gitlab.sensoro.com/frontend/materials/components',
+      github: 'https://github.com/sensoro-design/material-components',
     },
     nav: [
       { title: '组件', link: '/components' }
