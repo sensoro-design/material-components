@@ -9,3 +9,6 @@
 
 # dumi
 .dumi/tmp
+
+packages/components/version/version.ts
+packages/components/version/version.tsx
