@@ -1,7 +1,17 @@
 import path from 'path';
 import { defineConfig } from 'dumi';
 
+const isProd = process.env.NODE_ENV === 'production';
+
+const prodConfig = isProd
+  ? defineConfig({
+    ssr: {},
+  })
+  : defineConfig({});
+
 export default defineConfig({
+  ssr: false,
+  hash: true,
   themeConfig: {
     name: 'Material',
     socialLinks: {
@@ -20,4 +30,7 @@ export default defineConfig({
     atomDirs: [{ type: 'component', dir: 'packages/components/src' }],
     codeBlockMode: 'passive',
   },
+  mfsu: false,
+  crossorigin: {},
+  ...prodConfig
 })
