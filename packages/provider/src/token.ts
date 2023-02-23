@@ -7,7 +7,9 @@ import type { GlobalToken } from 'antd/es/theme/interface';
 import type { MaterialAliasToken } from './types';
 
 export const defaultToken: MaterialAliasToken = {
-
+  blue: '#1677ff',
+  purple: '#722ED1',
+  cyan: '#13C2C2',
 } as MaterialAliasToken;
 
 export const emptyTheme = createTheme((token) => token);

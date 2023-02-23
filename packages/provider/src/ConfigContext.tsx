@@ -23,7 +23,7 @@ export type ConfigContextPropsType = {
   containerDomRef?: React.RefObject<HTMLDivElement>;
 };
 
-const ConfigContext = createContext<ConfigContextPropsType>({
+export const MaterialConfigContext = createContext<ConfigContextPropsType>({
   theme: emptyTheme,
   hashed: true,
   dark: false,
@@ -31,5 +31,7 @@ const ConfigContext = createContext<ConfigContextPropsType>({
   getPrefixCls: defaultGetPrefixCls,
 });
 
-export const MaterialProvider = ConfigContext;
-export const { Consumer: ConfigConsumer } = ConfigContext;
+export const {
+  Consumer: MaterialConfigConsumer,
+  Provider: MaterialConfigProvider,
+} = MaterialConfigContext;

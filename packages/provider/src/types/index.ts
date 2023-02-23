@@ -25,7 +25,7 @@ export type MaterialAliasToken =
    * @type {string}
    * @example .lm
    */
-  lmCls: string;
+  materialComponentsCls: string;
   /**
    * antd 的 className
    * @type {string}
