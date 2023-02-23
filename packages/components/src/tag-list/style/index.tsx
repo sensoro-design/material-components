@@ -27,8 +27,6 @@ export function useStyle(prefixCls: string) {
       componentCls: `.${prefixCls}`,
     };
 
-    console.log(tagListToken);
-
     return [genTagListStyle(tagListToken)];
   })
 }
