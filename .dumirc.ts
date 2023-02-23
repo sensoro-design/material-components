@@ -26,7 +26,7 @@ export default defineConfig({
     '@lins-material/components': path.join(__dirname, 'packages/components/src'),
   },
   resolve: {
-    docDirs: ['docs'],
+    docDirs: [{ type: 'doc', dir: 'docs' }],
     atomDirs: [{ type: 'component', dir: 'packages/components/src' }],
     codeBlockMode: 'passive',
   },
