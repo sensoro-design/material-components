@@ -2,32 +2,33 @@ import { useStyle as useAntStyle } from '@lins-material/provider';
 
 import type { GenerateStyle, MaterialAliasToken } from '@lins-material/provider';
 
-interface TagListActionsToken extends MaterialAliasToken {
+interface TagListToken extends MaterialAliasToken {
   antCls: string;
   componentCls: string;
 }
 
-export function useStyle(prefixCls?: string) {
-  const genActionsStyle: GenerateStyle<TagListActionsToken> = (token) => {
-    const { componentCls, antCls } = token;
+const genTagListStyle: GenerateStyle<TagListToken> = (token) => {
+  const { componentCls, antCls } = token;
 
-    return {
-      [`${componentCls}`]: {
-        color: 'red',
-
-        [`& > ${antCls}-btn`]: {
-          color: 'green',
-        }
-      }
+  return {
+    [componentCls]: {
+      background: token.blue,
+    },
+    [`${componentCls}-popover${antCls}-popover`]: {
+      maxWidth: 240,
     }
   }
+}
 
+export function useStyle(prefixCls: string) {
   return useAntStyle('TagList', (token) => {
-    const tagListActionsToken = {
+    const tagListToken: TagListToken = {
       ...token,
       componentCls: `.${prefixCls}`,
     };
 
-    return [genActionsStyle(tagListActionsToken)];
+    console.log(tagListToken);
+
+    return [genTagListStyle(tagListToken)];
   })
 }
