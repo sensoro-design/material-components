@@ -9,6 +9,7 @@ importers:
       '@testing-library/react': ^13.4.0
       '@testing-library/react-hooks': ^8.0.1
       '@types/jest': ^29.4.0
+      '@types/jest-image-snapshot': ^6.1.0
       '@types/node': ^18.14.0
       '@types/react': ^18.0.28
       '@types/react-dom': ^18.0.11
@@ -19,7 +20,9 @@ importers:
       dumi: ^2.1.10
       husky: ^8.0.3
       jest: ^29.4.3
+      jest-canvas-mock: ^2.4.0
       jest-environment-jsdom: ^29.4.3
+      jest-image-snapshot: ^6.1.0
       lint-staged: ^13.1.2
       prettier: ^2.8.4
       react: ^18.2.0
@@ -33,6 +36,7 @@ importers:
       '@testing-library/react': registry.npmmirror.com/@testing-library/react/13.4.0_biqbaboplfbrettd7655fr4n2y
       '@testing-library/react-hooks': registry.npmmirror.com/@testing-library/react-hooks/8.0.1_zula6vjvt3wdocc4mwcxqa6nzi
       '@types/jest': registry.npmmirror.com/@types/jest/29.4.0
+      '@types/jest-image-snapshot': registry.npmmirror.com/@types/jest-image-snapshot/6.1.0
       '@types/node': registry.npmmirror.com/@types/node/18.14.0
       '@types/react': registry.npmmirror.com/@types/react/18.0.28
       '@types/react-dom': registry.npmmirror.com/@types/react-dom/18.0.11
@@ -43,7 +47,9 @@ importers:
       dumi: registry.npmmirror.com/dumi/2.1.10_noehsqc3fwzsvuutkhyahs63ri
       husky: registry.npmmirror.com/husky/8.0.3
       jest: registry.npmmirror.com/jest/29.4.3_lszm27wzplody5hzcr5ax274dy
+      jest-canvas-mock: registry.npmmirror.com/jest-canvas-mock/2.4.0
       jest-environment-jsdom: registry.npmmirror.com/jest-environment-jsdom/29.4.3
+      jest-image-snapshot: registry.npmmirror.com/jest-image-snapshot/6.1.0_jest@29.4.3
       lint-staged: registry.npmmirror.com/lint-staged/13.1.2
       prettier: registry.npmmirror.com/prettier/2.8.4
       react: registry.npmmirror.com/react/18.2.0
@@ -3113,6 +3119,16 @@ packages:
       '@types/istanbul-lib-report': registry.npmmirror.com/@types/istanbul-lib-report/3.0.0
     dev: true
 
+  registry.npmmirror.com/@types/jest-image-snapshot/6.1.0:
+    resolution: {integrity: sha512-wYayjKQGdI0ZbmsAq7OPt+5wMMi1CDXXkF3LfoGj4eRC0dOqlYJdXqLwfC89Qf2apQdlL9StgCkw0iTDb8lpUw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/jest-image-snapshot/-/jest-image-snapshot-6.1.0.tgz}
+    name: '@types/jest-image-snapshot'
+    version: 6.1.0
+    dependencies:
+      '@types/jest': registry.npmmirror.com/@types/jest/29.4.0
+      '@types/pixelmatch': registry.npmmirror.com/@types/pixelmatch/5.2.4
+      ssim.js: registry.npmmirror.com/ssim.js/3.5.0
+    dev: true
+
   registry.npmmirror.com/@types/jest/29.4.0:
     resolution: {integrity: sha512-VaywcGQ9tPorCX/Jkkni7RWGFfI11whqzs8dvxF41P17Z+z872thvEvlIbznjPJ02kl1HMX3LmLOonsj2n7HeQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/jest/-/jest-29.4.0.tgz}
     name: '@types/jest'
@@ -3188,6 +3204,14 @@ packages:
     resolution: {integrity: sha512-SuT16Q1K51EAVPz1K29DJ/sXjhSQ0zjvsypYJ6tlwVsRV9jwW5Adq2ch8Dq8kDBCkYnELS7N7VNCSB5nC56t/g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/parse5/-/parse5-6.0.3.tgz}
     name: '@types/parse5'
     version: 6.0.3
+    dev: true
+
+  registry.npmmirror.com/@types/pixelmatch/5.2.4:
+    resolution: {integrity: sha512-HDaSHIAv9kwpMN7zlmwfTv6gax0PiporJOipcrGsVNF3Ba+kryOZc0Pio5pn6NhisgWr7TaajlPEKTbTAypIBQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/pixelmatch/-/pixelmatch-5.2.4.tgz}
+    name: '@types/pixelmatch'
+    version: 5.2.4
+    dependencies:
+      '@types/node': registry.npmmirror.com/@types/node/18.14.0
     dev: true
 
   registry.npmmirror.com/@types/prettier/2.7.2:
@@ -5747,6 +5771,12 @@ packages:
     hasBin: true
     dev: true
 
+  registry.npmmirror.com/cssfontparser/1.2.1:
+    resolution: {integrity: sha512-6tun4LoZnj7VN6YeegOVb67KBX/7JJsqvj+pv3ZA7F878/eN33AbGa5b/S/wXxS/tcp8nc40xRUrsPlxIyNUPg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/cssfontparser/-/cssfontparser-1.2.1.tgz}
+    name: cssfontparser
+    version: 1.2.1
+    dev: true
+
   registry.npmmirror.com/csso/4.2.0:
     resolution: {integrity: sha512-wvlcdIbf6pwKEk7vHj8/Bkc0B4ylXZruLvOgs9doS5eOsOpuodOV2zJChSpkp+pRpYQLQMeF04nr3Z68Sta9jA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/csso/-/csso-4.2.0.tgz}
     name: csso
@@ -7672,6 +7702,13 @@ packages:
     engines: {node: '>=8.0.0'}
     dev: true
 
+  registry.npmmirror.com/get-stdin/5.0.1:
+    resolution: {integrity: sha512-jZV7n6jGE3Gt7fgSTJoz91Ak5MuTLwMwkoYdjxuJ/AmjIsE1UC03y/IWkZCQGEvVNS9qoRNwy5BCqxImv0FVeA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/get-stdin/-/get-stdin-5.0.1.tgz}
+    name: get-stdin
+    version: 5.0.1
+    engines: {node: '>=0.12.0'}
+    dev: true
+
   registry.npmmirror.com/get-stream/3.0.0:
     resolution: {integrity: sha512-GlhdIUuVakc8SJ6kK0zAFbiGzRFzNnY4jUuEbV9UROo4Y+0Ny4fjvcZFVTeDA4odpFyOQzaw6hXukJSq/f28sQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/get-stream/-/get-stream-3.0.0.tgz}
     name: get-stream
@@ -7850,6 +7887,12 @@ packages:
       ignore: registry.npmmirror.com/ignore/5.2.4
       merge2: registry.npmmirror.com/merge2/1.4.1
       slash: registry.npmmirror.com/slash/3.0.0
+    dev: true
+
+  registry.npmmirror.com/glur/1.1.2:
+    resolution: {integrity: sha512-l+8esYHTKOx2G/Aao4lEQ0bnHWg4fWtJbVoZZT9Knxi01pB8C80BR85nONLFwkkQoFRCmXY+BUcGZN3yZ2QsRA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/glur/-/glur-1.1.2.tgz}
+    name: glur
+    version: 1.1.2
     dev: true
 
   registry.npmmirror.com/gopd/1.0.1:
@@ -9193,6 +9236,15 @@ packages:
       textextensions: registry.npmmirror.com/textextensions/2.6.0
     dev: true
 
+  registry.npmmirror.com/jest-canvas-mock/2.4.0:
+    resolution: {integrity: sha512-mmMpZzpmLzn5vepIaHk5HoH3Ka4WykbSoLuG/EKoJd0x0ID/t+INo1l8ByfcUJuDM+RIsL4QDg/gDnBbrj2/IQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-canvas-mock/-/jest-canvas-mock-2.4.0.tgz}
+    name: jest-canvas-mock
+    version: 2.4.0
+    dependencies:
+      cssfontparser: registry.npmmirror.com/cssfontparser/1.2.1
+      moo-color: registry.npmmirror.com/moo-color/1.0.3
+    dev: true
+
   registry.npmmirror.com/jest-changed-files/29.4.3:
     resolution: {integrity: sha512-Vn5cLuWuwmi2GNNbokPOEcvrXGSGrqVnPEZV7rC6P7ck07Dyw9RFnvWglnupSh+hGys0ajGtw/bc2ZgweljQoQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-changed-files/-/jest-changed-files-29.4.3.tgz}
     name: jest-changed-files
@@ -9424,6 +9476,27 @@ packages:
       walker: registry.npmmirror.com/walker/1.0.8
     optionalDependencies:
       fsevents: registry.npmmirror.com/fsevents/2.3.2
+    dev: true
+
+  registry.npmmirror.com/jest-image-snapshot/6.1.0_jest@29.4.3:
+    resolution: {integrity: sha512-LZYoks6V1HAkYqyi80gUjMWVsa++Oy0fckAGMLBQseVweZT9AmJNKAINwHLqX1fpeMy2hTG5CCEe4IUX2N3Nmg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-image-snapshot/-/jest-image-snapshot-6.1.0.tgz}
+    id: registry.npmmirror.com/jest-image-snapshot/6.1.0
+    name: jest-image-snapshot
+    version: 6.1.0
+    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
+    peerDependencies:
+      jest: '>=20 <=29'
+    dependencies:
+      chalk: registry.npmmirror.com/chalk/4.1.2
+      get-stdin: registry.npmmirror.com/get-stdin/5.0.1
+      glur: registry.npmmirror.com/glur/1.1.2
+      jest: registry.npmmirror.com/jest/29.4.3_lszm27wzplody5hzcr5ax274dy
+      lodash: registry.npmmirror.com/lodash/4.17.21
+      mkdirp: registry.npmmirror.com/mkdirp/0.5.6
+      pixelmatch: registry.npmmirror.com/pixelmatch/5.3.0
+      pngjs: registry.npmmirror.com/pngjs/3.4.0
+      rimraf: registry.npmmirror.com/rimraf/2.7.1
+      ssim.js: registry.npmmirror.com/ssim.js/3.5.0
     dev: true
 
   registry.npmmirror.com/jest-leak-detector/29.4.3:
@@ -11139,6 +11212,14 @@ packages:
       minimist: registry.npmmirror.com/minimist/1.2.8
     dev: true
 
+  registry.npmmirror.com/moo-color/1.0.3:
+    resolution: {integrity: sha512-i/+ZKXMDf6aqYtBhuOcej71YSlbjT3wCO/4H1j8rPvxDJEifdwgg5MaFyu6iYAT8GBZJg2z0dkgK4YMzvURALQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/moo-color/-/moo-color-1.0.3.tgz}
+    name: moo-color
+    version: 1.0.3
+    dependencies:
+      color-name: registry.npmmirror.com/color-name/1.1.4
+    dev: true
+
   registry.npmmirror.com/moo/0.5.2:
     resolution: {integrity: sha512-iSAJLHYKnX41mKcJKjqvnAN9sf0LMDTXDEvFv+ffuRR9a1MIuXLjMNL6EsnDHSkKLTWNqQQ5uo61P4EbU4NU+Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/moo/-/moo-0.5.2.tgz}
     name: moo
@@ -12043,6 +12124,15 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
+  registry.npmmirror.com/pixelmatch/5.3.0:
+    resolution: {integrity: sha512-o8mkY4E/+LNUf6LzX96ht6k6CEDi65k9G2rjMtBe9Oo+VPKSvl+0GKHuH/AlG+GA5LPG/i5hrekkxUc3s2HU+Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/pixelmatch/-/pixelmatch-5.3.0.tgz}
+    name: pixelmatch
+    version: 5.3.0
+    hasBin: true
+    dependencies:
+      pngjs: registry.npmmirror.com/pngjs/6.0.0
+    dev: true
+
   registry.npmmirror.com/pkg-dir/4.2.0:
     resolution: {integrity: sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/pkg-dir/-/pkg-dir-4.2.0.tgz}
     name: pkg-dir
@@ -12066,6 +12156,20 @@ packages:
     name: pluralize
     version: 8.0.0
     engines: {node: '>=4'}
+    dev: true
+
+  registry.npmmirror.com/pngjs/3.4.0:
+    resolution: {integrity: sha512-NCrCHhWmnQklfH4MtJMRjZ2a8c80qXeMlQMv2uVp9ISJMTt562SbGd6n2oq0PaPgKm7Z6pL9E2UlLIhC+SHL3w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/pngjs/-/pngjs-3.4.0.tgz}
+    name: pngjs
+    version: 3.4.0
+    engines: {node: '>=4.0.0'}
+    dev: true
+
+  registry.npmmirror.com/pngjs/6.0.0:
+    resolution: {integrity: sha512-TRzzuFRRmEoSW/p1KVAmiOgPco2Irlah+bGFCeNfJXxxYGwSw7YwAOAcd7X28K/m5bjBWKsC29KyoMfHbypayg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/pngjs/-/pngjs-6.0.0.tgz}
+    name: pngjs
+    version: 6.0.0
+    engines: {node: '>=12.13.0'}
     dev: true
 
   registry.npmmirror.com/point-in-polygon/1.1.0:
@@ -15258,6 +15362,12 @@ packages:
     resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/sprintf-js/-/sprintf-js-1.0.3.tgz}
     name: sprintf-js
     version: 1.0.3
+    dev: true
+
+  registry.npmmirror.com/ssim.js/3.5.0:
+    resolution: {integrity: sha512-Aj6Jl2z6oDmgYFFbQqK7fght19bXdOxY7Tj03nF+03M9gCBAjeIiO8/PlEGMfKDwYpw4q6iBqVq2YuREorGg/g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/ssim.js/-/ssim.js-3.5.0.tgz}
+    name: ssim.js
+    version: 3.5.0
     dev: true
 
   registry.npmmirror.com/ssri/4.1.6:
