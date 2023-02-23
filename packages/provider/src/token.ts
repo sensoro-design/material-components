@@ -10,6 +10,8 @@ export const defaultToken: MaterialAliasToken = {
   blue: '#1677ff',
   purple: '#722ED1',
   cyan: '#13C2C2',
+  _tokenKey: '19w80ff',
+  _hashId: 'css-dev-only-do-not-override-i2zu9q',
 } as MaterialAliasToken;
 
 export const emptyTheme = createTheme((token) => token);

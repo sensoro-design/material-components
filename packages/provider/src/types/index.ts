@@ -32,4 +32,6 @@ export type MaterialAliasToken =
    * @example .ant
    */
   antCls: string;
+  _tokenKey?: string;
+  _hashId?: string;
 };
