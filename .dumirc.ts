@@ -22,11 +22,15 @@ export default defineConfig({
     ],
   },
   alias: {
+    '@lins-material/provider/es': path.join(__dirname, 'packages/provider/src'),
+    '@lins-material/provider/lib': path.join(__dirname, 'packages/provider/src'),
     '@lins-material/provider': path.join(__dirname, 'packages/provider/src'),
+    '@lins-material/components/es': path.join(__dirname, 'packages/components/src'),
+    '@lins-material/components/lib': path.join(__dirname, 'packages/components/src'),
     '@lins-material/components': path.join(__dirname, 'packages/components/src'),
   },
   resolve: {
-    docDirs: [{ type: 'doc', dir: 'docs' }],
+    docDirs: ['docs'],
     atomDirs: [{ type: 'component', dir: 'packages/components/src' }],
     codeBlockMode: 'passive',
   },
