@@ -7,9 +7,11 @@ import type { GlobalToken } from 'antd/es/theme/interface';
 import type { MaterialAliasToken } from './types';
 
 export const defaultToken: MaterialAliasToken = {
-  blue: '#1677ff',
+  blue: '#2b6de5',
   purple: '#722ED1',
   cyan: '#13C2C2',
+  // 圆角
+  borderRadius: 2,
   _tokenKey: '19w80ff',
   _hashId: 'css-dev-only-do-not-override-i2zu9q',
 } as MaterialAliasToken;

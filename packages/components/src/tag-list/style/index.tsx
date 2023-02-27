@@ -11,9 +11,7 @@ const genTagListStyle: GenerateStyle<TagListToken> = (token) => {
   const { componentCls, antCls } = token;
 
   return {
-    [componentCls]: {
-      background: token.blue,
-    },
+    [componentCls]: {},
     [`${componentCls}-popover${antCls}-popover`]: {
       maxWidth: 240,
     }

@@ -4,6 +4,7 @@ export {
   MaterialConfigProvider,
 } from './ConfigContext';
 export { MaterialProvider } from './ConfigProvider';
+export { defaultToken } from './token';
 export { useStyle } from './hooks/useStyle';
 export { resetComponent } from './utils/resetComponent';
 export { setAlpha, lighten, } from './utils/color';

@@ -2,6 +2,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
+      "@@/*": [".dumi/tmp/*"],
       "@lins-material/provider": ["packages/provider/src/index.ts"],
       "@lins-material/provider/es/*": ["packages/provider/src/*"],
       "@lins-material/provider/lib/*": ["packages/provider/src/*"],
@@ -25,5 +26,10 @@
     "skipLibCheck": true,
     "stripInternal": true
   },
+  "include": [
+    ".dumi/**/*",
+    ".dumirc.ts",
+    "**/src/**/*"
+  ],
   "exclude": ["node_modules", "lib", "es"]
 }
