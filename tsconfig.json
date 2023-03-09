@@ -3,12 +3,10 @@
     "baseUrl": "./",
     "paths": {
       "@@/*": [".dumi/tmp/*"],
-      "@lins-material/provider": ["packages/provider/src/index.ts"],
-      "@lins-material/provider/es/*": ["packages/provider/src/*"],
-      "@lins-material/provider/lib/*": ["packages/provider/src/*"],
-      "@lins-material/components": ["packages/components/src/index.ts"],
-      "@lins-material/components/es/*": ["packages/components/src/*"],
-      "@lins-material/components/lib/*": ["packages/components/src/*"],
+      "sensoro-design": ["components/index.ts"],
+      "sensoro-design/es/*": ["components/*"],
+      "sensoro-design/lib/*": ["components/*"],
+      "sensoro-design/locale/*": ["components/locale/*"]
     },
     "strictNullChecks": true,
     "module": "esnext",
@@ -29,7 +27,7 @@
   "include": [
     ".dumi/**/*",
     ".dumirc.ts",
-    "**/src/**/*"
+    "components/**/*"
   ],
   "exclude": ["node_modules", "lib", "es"]
 }

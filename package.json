@@ -1,5 +1,29 @@
 {
-  "private": true,
+  "name": "sensoro-design",
+  "version": "1.0.0",
+  "description": "An enterprise-class UI design language and React components implementation",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "sideEffects": [
+    "*.css"
+  ],
+  "files": [
+    "dist",
+    "es",
+    "lib",
+    "locale"
+  ],
+  "keywords": [
+    "sensoro",
+    "design",
+    "component",
+    "components",
+    "frontend",
+    "react",
+    "react-component",
+    "ui"
+  ],
   "scripts": {
     "start": "cross-env PORT=8888 dumi dev",
     "build": "dumi build",
@@ -10,6 +34,21 @@
     "version": "redbud run ./scripts/generate-version.ts",
     "prepare": "husky install"
   },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  },
+  "dependencies": {
+    "@ant-design/colors": "^7.0.0",
+    "@ant-design/cssinjs": "^1.6.1",
+    "@babel/runtime": "^7.18.3",
+    "@pansy/shared": "^1.10.0",
+    "@pansy/react-hooks": "^1.0.3",
+    "@ctrl/tinycolor": "^3.6.0",
+    "d3-path": "^3.1.0",
+    "rc-util": "^5.27.0",
+    "scroll-into-view-if-needed": "^3.0.3"
+  },
   "devDependencies": {
     "@testing-library/dom": "^9.0.0",
     "@testing-library/jest-dom": "^5.16.5",
@@ -17,6 +56,7 @@
     "@testing-library/react-hooks": "^8.0.1",
     "@types/jest": "^29.4.0",
     "@types/jest-image-snapshot": "^6.1.0",
+    "@types/d3-path": "^3.0.0",
     "@types/node": "^18.14.6",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
@@ -37,5 +77,17 @@
     "redbud": "^1.6.0",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5"
-  }
+  },
+  "authors": [
+    "wangxingkang <wang_xingkang@qq.com> (https://github.com/wangxingkang)"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not dead"
+  ]
 }

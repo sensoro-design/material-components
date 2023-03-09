@@ -4,12 +4,12 @@
 # production
 **/dist
 /.vscode
-**/**/lib/**
-**/**/es/**
+lib/**
+es/**
 
 # dumi
 .dumi/tmp
 .dumi/tmp-production
 
-packages/components/version/version.ts
-packages/components/version/version.tsx
+components/version/version.ts
+components/version/version.tsx

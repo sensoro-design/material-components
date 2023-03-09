@@ -23,19 +23,15 @@ export default defineConfig({
     ],
   },
   alias: {
-    '@lins-material/provider/es': path.join(__dirname, 'packages/provider/src'),
-    '@lins-material/provider/lib': path.join(__dirname, 'packages/provider/src'),
-    '@lins-material/provider': path.join(__dirname, 'packages/provider/src'),
-    '@lins-material/components/es': path.join(__dirname, 'packages/components/src'),
-    '@lins-material/components/lib': path.join(__dirname, 'packages/components/src'),
-    '@lins-material/components': path.join(__dirname, 'packages/components/src'),
+    'sensoro-design/es': path.join(__dirname, 'components'),
+    'sensoro-design/lib': path.join(__dirname, 'components'),
+    'sensoro-design': path.join(__dirname, 'components/index.ts')
   },
   favicons: [logo],
   resolve: {
     docDirs: ['docs'],
     atomDirs: [
-      { type: 'component', dir: 'ant-design' },
-      { type: 'component', dir: 'packages/components/src' }
+      { type: 'component', dir: 'components' }
     ],
     codeBlockMode: 'passive',
   },

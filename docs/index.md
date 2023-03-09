@@ -12,19 +12,19 @@ hero:
 
 ```bash
 # npm install
-$ npm install @lins-material/components --save
+$ npm install sensoro-design --save
 
 # yarn install
-$ yarn add @lins-material/components
+$ yarn add sensoro-design
 
 # pnpm install
-$ pnpm i @lins-material/components
+$ pnpm i sensoro-design
 ```
 
 ## 🔨 使用
 
 ```ts
-import { Battery } from '@lins-material/components';
+import { Battery } from 'sensoro-design';
 
 export default () => {
   return (
