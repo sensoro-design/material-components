@@ -10,4 +10,7 @@ export type { EmptyProps } from './empty';
 export { Space } from './space';
 export type { SpaceProps } from './space';
 
+export { Watermark } from './watermark';
+export type { WatermarkProps } from './watermark';
+
 export { version } from './version';

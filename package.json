@@ -45,6 +45,7 @@
     "@ctrl/tinycolor": "^3.6.0",
     "@pansy/react-hooks": "^1.0.3",
     "@pansy/shared": "^1.11.0",
+    "@rc-component/mutate-observer": "^1.0.0",
     "@sensoro-design/icons": "^2.1.0",
     "d3-path": "^3.1.0",
     "dayjs": "^1.11.7",

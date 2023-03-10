@@ -7,6 +7,7 @@ specifiers:
   '@ctrl/tinycolor': ^3.6.0
   '@pansy/react-hooks': ^1.0.3
   '@pansy/shared': ^1.11.0
+  '@rc-component/mutate-observer': ^1.0.0
   '@sensoro-design/icons': ^2.1.0
   '@testing-library/dom': ^9.0.0
   '@testing-library/jest-dom': ^5.16.5
@@ -47,6 +48,7 @@ dependencies:
   '@ctrl/tinycolor': 3.6.0
   '@pansy/react-hooks': 1.0.3_react@18.2.0
   '@pansy/shared': 1.11.0
+  '@rc-component/mutate-observer': 1.0.0_biqbaboplfbrettd7655fr4n2y
   '@sensoro-design/icons': 2.1.0_biqbaboplfbrettd7655fr4n2y
   d3-path: 3.1.0
   dayjs: 1.11.7
@@ -2426,7 +2428,6 @@ packages:
       rc-util: 5.28.0_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-    dev: true
 
   /@rc-component/portal/1.1.0_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-tbXM9SB1r5FOuZjRCljERFByFiEUcMmCWMXLog/NmgCzlAzreXyf23Vei3ZpSMxSMavzPnhCovfZjZdmxS3d1w==}

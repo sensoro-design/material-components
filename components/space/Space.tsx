@@ -3,6 +3,7 @@ import { classNames, isArray, } from '@pansy/shared';
 import { toArray } from '@pansy/shared/react';
 import { ConfigContext } from '../config-provider';
 import { Item } from './Item';
+import { Compact } from './Compact';
 import { useFlexGapSupport } from '../_utils/hooks/useFlexGapSupport';
 import type { SizeType } from '../config-provider/SizeContext';
 import { useStyle } from './style';
@@ -55,7 +56,7 @@ export const SpaceContext = createContext({
   supportFlexGap: false,
 });
 
-export const Space: React.FC<SpaceProps> = (props) => {
+const InternalSpace: React.FC<SpaceProps> = (props) => {
   const { getPrefixCls, space, direction: contextDirection } = useContext(ConfigContext);
 
   const {
@@ -162,3 +163,13 @@ export const Space: React.FC<SpaceProps> = (props) => {
     </div>
   )
 }
+
+type CompoundedComponent = React.FC<SpaceProps> & {
+  Compact: typeof Compact;
+};
+
+const Space = InternalSpace as CompoundedComponent;
+
+Space.Compact = Compact;
+
+export { Space };
