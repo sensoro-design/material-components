@@ -1,4 +1,7 @@
 import React, { createContext,  } from 'react';
+import { SizeType } from './SizeContext';
+
+export type DirectionType = 'ltr' | 'rtl' | undefined;
 
 export const defaultPrefixCls = 's';
 export const defaultIconPrefixCls = `${defaultPrefixCls}-icon`;
@@ -12,6 +15,10 @@ const defaultGetPrefixCls = (suffixCls?: string, customizePrefixCls?: string) =>
 export interface ConfigContextProps {
   iconPrefixCls: string;
   getPrefixCls: (suffixCls?: string, customizePrefixCls?: string) => string;
+  direction?: DirectionType;
+  space?: {
+    size?: SizeType | number;
+  };
 }
 
 export const ConfigContext = createContext<ConfigContextProps>({
