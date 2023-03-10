@@ -7,6 +7,7 @@ specifiers:
   '@ctrl/tinycolor': ^3.6.0
   '@pansy/react-hooks': ^1.0.3
   '@pansy/shared': ^1.11.0
+  '@sensoro-design/icons': ^2.1.0
   '@testing-library/dom': ^9.0.0
   '@testing-library/jest-dom': ^5.16.5
   '@testing-library/react': ^14.0.0
@@ -22,6 +23,7 @@ specifiers:
   antd: ^5.3.0
   cross-env: ^7.0.3
   d3-path: ^3.1.0
+  dayjs: ^1.11.7
   dumi: ^2.1.15
   husky: ^8.0.3
   jest: ^29.5.0
@@ -45,7 +47,9 @@ dependencies:
   '@ctrl/tinycolor': 3.6.0
   '@pansy/react-hooks': 1.0.3_react@18.2.0
   '@pansy/shared': 1.11.0
+  '@sensoro-design/icons': 2.1.0_biqbaboplfbrettd7655fr4n2y
   d3-path: 3.1.0
+  dayjs: 1.11.7
   rc-util: 5.28.0_biqbaboplfbrettd7655fr4n2y
   scroll-into-view-if-needed: 3.0.6
 
@@ -91,6 +95,12 @@ packages:
       '@jridgewell/gen-mapping': 0.1.1
       '@jridgewell/trace-mapping': 0.3.17
     dev: true
+
+  /@ant-design/colors/6.0.0:
+    resolution: {integrity: sha512-qAZRvPzfdWHtfameEGP2Qvuf838NhergR35o+EuVyB5XvSA98xod5r4utvi4TJ3ywmevm290g9nsCG5MryrdWQ==}
+    dependencies:
+      '@ctrl/tinycolor': 3.6.0
+    dev: false
 
   /@ant-design/colors/7.0.0:
     resolution: {integrity: sha512-iVm/9PfGCbC0dSMBrz7oiEXZaaGH7ceU40OJEfKmyuzR9R5CRimJYPlRiFtMQGQcbNMea/ePcoIebi4ASGYXtg==}
@@ -1818,6 +1828,10 @@ packages:
       fastq: 1.15.0
     dev: true
 
+  /@pansy/classnames/1.0.1:
+    resolution: {integrity: sha512-L+8EGUhuqlZhWz1ojVnTcRk8U958QhHvzCy3KHvmAGm+cRiHaX/CyJd5mEEGSKZhAOa/EpPjqTjafPX6TZNvtw==}
+    dev: false
+
   /@pansy/hook-utils/0.5.0_react@18.2.0:
     resolution: {integrity: sha512-cBkYjPDkt6WU7K7DxndRudU2uINnLc60xaigj0xu8mNJIHH9AwDUNh7sbsN86bfYnP6hPqyRBNUcZBkAkkOONw==}
     peerDependencies:
@@ -2502,6 +2516,25 @@ packages:
       domhandler: 4.3.1
       selderee: 0.6.0
     dev: true
+
+  /@sensoro-design/icons-svg/1.80.0:
+    resolution: {integrity: sha512-msBO2W2RkAEzgmsbhIHGp5LlTNhIQ0hOKX/wx6GeocLjfj6TZOInsFx5+jdwjOL7QTyIW1FtqiKLPPnsblXQQA==}
+    dev: false
+
+  /@sensoro-design/icons/2.1.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-orzxtpD05rrqN06blmAjXLagEl6/bCPamaOrI4BuLEgNEc/X9BEAtBpMoOev9W63AH7hY6gNQ4P4piAUl4fIiA==}
+    peerDependencies:
+      react: '>=16.0.0'
+      react-dom: '>=16.0.0'
+    dependencies:
+      '@ant-design/colors': 6.0.0
+      '@babel/runtime': 7.21.0
+      '@pansy/classnames': 1.0.1
+      '@sensoro-design/icons-svg': 1.80.0
+      rc-util: 5.28.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
 
   /@sinclair/typebox/0.25.24:
     resolution: {integrity: sha512-XJfwUVUKDHF5ugKwIcxEgc9k8b7HbznCp6eUfWgu710hMPNIO4aw4/zB5RogDQz8nd6gyCDpU9O/m6qYEWY6yQ==}
@@ -5156,7 +5189,6 @@ packages:
 
   /dayjs/1.11.7:
     resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==}
-    dev: true
 
   /debug/3.1.0:
     resolution: {integrity: sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==}
