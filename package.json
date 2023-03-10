@@ -35,14 +35,14 @@
     "prepare": "husky install"
   },
   "peerDependencies": {
-    "react": ">=16.9.0",
-    "react-dom": ">=16.9.0"
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
   },
   "dependencies": {
     "@ant-design/colors": "^7.0.0",
     "@ant-design/cssinjs": "^1.6.1",
     "@babel/runtime": "^7.18.3",
-    "@pansy/shared": "^1.10.0",
+    "@pansy/shared": "^1.11.0",
     "@pansy/react-hooks": "^1.0.3",
     "@ctrl/tinycolor": "^3.6.0",
     "d3-path": "^3.1.0",
