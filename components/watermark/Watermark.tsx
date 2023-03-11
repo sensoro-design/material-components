@@ -319,12 +319,14 @@ export const Watermark: React.FC<WatermarkProps> = (props) => {
   };
 
   return (
-    <div
-      ref={containerRef}
-      className={className}
-      style={{ position: 'relative', ...style }}
-    >
-      {children}
-    </div>
+    <MutateObserver onMutate={onMutate}>
+      <div
+        ref={containerRef}
+        className={className}
+        style={{ position: 'relative', ...style }}
+      >
+        {children}
+      </div>
+    </MutateObserver>
   );
 }

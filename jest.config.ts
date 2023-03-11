@@ -11,7 +11,10 @@ const config: Config.InitialOptions = {
   transform: {
     ...defaultConfig.transform
   },
-  setupFiles: [...(defaultConfig.setupFiles || [])],
+  setupFiles: [
+    ...(defaultConfig.setupFiles || []),
+    'jest-canvas-mock',
+  ],
   setupFilesAfterEnv: [...(defaultConfig.setupFilesAfterEnv || []), './tests/setupFilesAfterEnv.ts']
 }
 

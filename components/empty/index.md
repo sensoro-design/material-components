@@ -5,7 +5,7 @@ subtitle: 空状态
 demo:
   cols: 2
 group:
-  title: 通用
+  title: 数据展示
   order: 1
 ---
 
