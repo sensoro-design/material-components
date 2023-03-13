@@ -1,6 +1,8 @@
 import React, { createContext,  } from 'react';
 import { SizeType } from './SizeContext';
 
+import type { Locale } from '../locale';
+
 export type DirectionType = 'ltr' | 'rtl' | undefined;
 
 export const defaultPrefixCls = 's';
@@ -19,6 +21,7 @@ export interface ConfigContextProps {
   space?: {
     size?: SizeType | number;
   };
+  locale?: Locale;
 }
 
 export const ConfigContext = createContext<ConfigContextProps>({

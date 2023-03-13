@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { createTheme, useCacheToken, useStyleRegister } from '@ant-design/cssinjs';
 import { version } from '../version';
+import { formatToken } from './utils/alias';
 import { derivative as defaultDerivative } from './themes/default';
 import { seedToken as defaultSeedToken } from './themes/seed';
 import statisticToken, { merge as mergeToken, statistic } from './utils/statistic';
@@ -10,6 +11,9 @@ import type { CSSInterpolation, Theme } from '@ant-design/cssinjs';
 import type { FullToken } from './utils/genComponentStyleHook';
 import type {
   AliasToken,
+  PresetColorType,
+  PresetColorKey,
+  SeedToken,
 } from './interface';
 
 const defaultTheme = createTheme(defaultDerivative);
@@ -45,6 +49,7 @@ export function useToken() {
     {
       salt,
       override: { override: rootDesignToken, ...components },
+      formatToken,
     },
   );
 
@@ -66,6 +71,9 @@ export {
   genComponentStyleHook,
 }
 export type {
+  PresetColorType,
+  PresetColorKey,
+  SeedToken,
   AliasToken,
   FullToken,
 }
