@@ -10,6 +10,9 @@ export type { ButtonProps } from './button';
 export { Empty } from './empty';
 export type { EmptyProps } from './empty';
 
+export { Plate } from './plate';
+export type { PlateProps } from './plate';
+
 export { Space } from './space';
 export type { SpaceProps } from './space';
 

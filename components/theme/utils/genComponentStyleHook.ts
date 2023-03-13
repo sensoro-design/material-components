@@ -51,7 +51,7 @@ export function genComponentStyleHook<ComponentName extends OverrideComponent>(
 
     return [
       useStyleRegister(
-        { theme, token, hashId, path: [component, prefixCls] },
+        { theme, token, hashId, path: [component, prefixCls, iconPrefixCls] },
         () => {
           const { token: proxyToken, flush } = statisticToken(token);
 

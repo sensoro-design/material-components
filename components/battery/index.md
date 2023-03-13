@@ -6,7 +6,7 @@ demo:
   cols: 2
 group:
   title: 数据展示
-  order: 1
+  order: 50
 ---
 
 用于展示电池通电状态或电池电量。

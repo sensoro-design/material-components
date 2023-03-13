@@ -6,7 +6,6 @@ demo:
   cols: 2
 group:
   title: 数据展示
-  order: 1
 ---
 
 用于展示信号强度。
