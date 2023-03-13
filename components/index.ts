@@ -1,6 +1,9 @@
 export { Battery } from './battery';
 export type { BatteryProps } from './battery';
 
+export { Signal } from './signal';
+export type { SignalProps } from './signal';
+
 export { Button } from './button';
 export type { ButtonProps } from './button';
 

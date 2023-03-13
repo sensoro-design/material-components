@@ -1,7 +1,6 @@
-import { Battery } from '../';
+import { Battery } from '../index';
+import { mountTest } from '../../../tests/shared/mountTest';
 
 describe('Battery', () => {
-  it('should be defined', () => {
-    expect(Battery).toBeDefined();
-  });
+  mountTest(Battery);
 });
